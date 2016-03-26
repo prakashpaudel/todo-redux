@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "c9": "webpack-dev-server --port $PORT --host $IP",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0tal/todo-redux.git"
   },
   "author": "Prakash Paudel",
   "license": "ISC",

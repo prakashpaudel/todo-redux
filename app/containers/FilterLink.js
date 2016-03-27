@@ -4,7 +4,7 @@ import Link from '../components/Link'
 
 const mapStateToProps = (state, ownProps) => {
 	return {
-		active: ownProps.filter === state.filter
+		active: ownProps.filter === state.visibilityFilter
 	}
 }
 
@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 
-const FilterLink = () => connect(
+const FilterLink = connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(Link)

@@ -5,29 +5,28 @@ My attempt to build a redux/react todo app from scratch. Closely based of the tu
 
 ## Structure
 ###Root
-package.json
-webpack.config.js
-.babelrc
-.gitignore
+	- package.json
+	- webpack.config.js
+	- .babelrc
+	- .gitignore
 	- App
-	index.html
-	index.js
+		- index.html
+		- index.js
 		- actions [type, ...]
 			- index: addTodo, setVisibilityFilter, toggleTodo
-			- index.test
 		- reducers: (state, action) => nextState
 			- index: combineReducers
 			- todos: ADD_TODO, TOGGLE_TODO
 		- components (presentat, stateless functions)
 			App
-			* TodoList
-			** Todo
-			* Footer
-			** Link
+			- TodoList
+			  - Todo
+			- Footer
+			  - Link
 		- containers (wrappers for presentation components, redux connect)
-			* Addtodo
-			* VisibleTodoList
-			* FilterLink
+			- Addtodo
+			- VisibleTodoList
+			- FilterLink
 
 ## Data Flow
 	- Comoponents
